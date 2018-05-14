@@ -3,8 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-          validates :first_name, presence: true, length: {maximum: 65}
-          validates :last_name, presence: true, length: {maximum: 65}
+          validates :firstname, presence: true
+          validates :lastname, presence: true
 
 	has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, 
 	:default_url => "/assets/default_image.png"
