@@ -10,18 +10,16 @@
       <li><a href="/">Bienvenue<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
     <ul class="sidebar-nav" id="sidebar">
     </ul>
-      
-      <% if (!user_signed_in?) %>
+
       <li><a href="/users/sign_up">inscription<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
       <li><a href="/users/sign_in">Connexion<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-
-      <li><a href=" /users/edit">profile<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+      <li><a href="<% edit_user_registration_path %>">profile<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
       <li role="separator" class="divider"></li>
       <li><a href="<% destroy_user_session_path %>">Déconnexion<span class="sub_icon glyphicon glyphicon-link"></span></a>
       </li>
-      <% else %>
+
     </ul>
-  <% end %>
+
 
   </div>
 
