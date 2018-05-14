@@ -133,3 +133,24 @@
 .background{
   color: black;
 }
+.fond {
+ background: url('image_de_fond.jpg') no-repeat center center;
+ position: fixed; /* Le fond est fixé en haut de la page */
+ width: 100%; /* Il occupe toute la largeur de l'écran */
+ height: 400px; /* On met ici la même hauteur que le jumbotron */
+ top:0;
+ left:0;
+ z-index: -1;
+}
+
+.jumbotron {
+ margin-bottom: 0px;
+ height: 300px;
+ color: #c0392b; /* Le texte sera affiché en blanc */
+ text-shadow: black 0.3em 0.3em 0.3em;
+ background:transparent;
+}
+.taille{
+
+  font-size: 4.5rem;
+}
