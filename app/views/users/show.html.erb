@@ -1,2 +1,18 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+    <div class="row">
+
+    	<div class="col-md-3">
+    		<%= image_tag avatar_url(@user), class: "avatar-full" %>
+    		<div class="panel panel-default">
+    			<div class="panel-heading">Vérification</div>
+    			<div class="panel-body">
+    				Email: <%= @user.email %><br>
+    				Prénom: <%= @user.firstname %>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="col-md-9">
+    		<h2><%= @user.lastname%></h2>
+
+    	</div>
+    </div>
